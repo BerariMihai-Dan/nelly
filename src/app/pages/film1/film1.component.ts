@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 
 @Component({
   selector: 'app-film1',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Film1Component implements OnInit {
 
-  constructor() { }
+  constructor(private route: ActivatedRoute,) { }
 
   ngOnInit(): void {
   }
